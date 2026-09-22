@@ -1,0 +1,35 @@
+services:
+  - type: web
+    name: myraa-ai-backend
+    runtime: node
+    plan: free
+    region: oregon
+    buildCommand: npm install && npm run build
+    startCommand: npm start
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: PORT
+        value: 10000
+      - key: GEMINI_API_KEY
+        sync: false
+      - key: MYRAA_FAST_MODEL
+        value: gemini-3.5-flash
+      - key: MYRAA_VISION_MODEL
+        value: gemini-3.1-flash-live-preview
+      - key: MYRAA_SPEECH_MODEL
+        value: gemini-3.1-flash-live-preview
+      - key: MYRAA_ENABLE_COGNITION
+        value: "true"
+      - key: MYRAA_ENABLE_INITIATIVE
+        value: "true"
+      - key: MYRAA_ENABLE_PROACTIVE_SPEECH
+        value: "true"
+      - key: MYRAA_ENABLE_SKILL_LEARNING
+        value: "true"
+      - key: MYRAA_ENABLE_REFLECTION
+        value: "true"
+      - key: MYRAA_API_CATALOGUE_SYNC
+        value: "true"
+    healthCheckPath: /api/health
+    autoDeploy: true

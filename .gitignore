@@ -1,0 +1,33 @@
+node_modules/
+build/
+dist/
+coverage/
+.DS_Store
+*.log
+.myraa-data/
+cognition/*.json
+.env*
+!.env.example
+
+# Android build outputs and Gradle cache
+.gradle/
+android/.gradle/
+android/build/
+android/app/build/
+android/local.properties
+android/.idea/
+android/captures/
+# Local runtime data & secrets
+secrets.json
+memories.json
+settings.json
+.myraa-data/
+.claude/
+.codex-backup*/
+
+# Python agent builds & packaging artifacts
+agent_build*/
+agent_dist*/
+release/
+Desktop/
+Downloads/

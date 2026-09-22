@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">MYRAA</string>
+    <string name="title_activity_main">MYRAA</string>
+    <string name="package_name">com.myraa.ai.assistant</string>
+    <string name="custom_url_scheme">com.myraa.ai.assistant</string>
+</resources>
