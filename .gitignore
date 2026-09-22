@@ -31,3 +31,7 @@ agent_dist*/
 release/
 Desktop/
 Downloads/
+*.apk
+*.aab
+*.zip
+
